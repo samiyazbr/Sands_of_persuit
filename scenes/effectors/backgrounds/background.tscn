@@ -1,0 +1,54 @@
+[gd_scene load_steps=6 format=3 uid="uid://bv2f8dp7ll62n"]
+
+[ext_resource type="PackedScene" uid="uid://obxt2gd8kibq" path="res://Assets/background/scrollingbackground.tscn" id="1_i6amu"]
+[ext_resource type="Texture2D" uid="uid://bcif07lo1kma2" path="res://Assets/background/town-desert-nature-landscape-scene_1308-51267.png" id="2_13gsb"]
+
+[sub_resource type="GDScript" id="GDScript_ggm3d"]
+script/source = "extends Node2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+"
+
+[sub_resource type="Shader" id="Shader_34wiu"]
+code = "shader_type canvas_item;
+
+uniform float scroll_speed;
+
+void fragment() {
+	// Called for every pixel the material is visible on.
+	vec2 u = UV;
+	u.x += scroll_speed*TIME;
+	vec4 col = texture(TEXTURE,u);
+	COLOR = col;
+}
+
+//void light() {
+	// Called for every pixel for every light affecting the CanvasItem.
+	// Uncomment to replace the default light processing function with this one.
+//}
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_umxbk"]
+shader = SubResource("Shader_34wiu")
+shader_parameter/scroll_speed = 0.1
+
+[node name="background" type="Node2D"]
+script = SubResource("GDScript_ggm3d")
+
+[node name="scrollingbackground" parent="." instance=ExtResource("1_i6amu")]
+material = SubResource("ShaderMaterial_umxbk")
+use_parent_material = true
+offset_left = 10.0
+offset_top = -5.0
+offset_right = 750.0
+offset_bottom = 504.0
+scale = Vector2(1.55484, 1.33677)
+texture = ExtResource("2_13gsb")

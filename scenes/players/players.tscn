@@ -1,0 +1,57 @@
+[gd_scene load_steps=11 format=3 uid="uid://bkvujjxq2pnhk"]
+
+[ext_resource type="Script" path="res://players.gd" id="1_lp47t"]
+[ext_resource type="Texture2D" uid="uid://bmdyqv4an4xbc" path="res://Assets/sprites/camel/frame_04_delay-0.04s (1).png" id="2_lnm5s"]
+[ext_resource type="Texture2D" uid="uid://cptw8cg7vsfl7" path="res://Assets/sprites/camel/frame_06_delay-0.04s.png" id="3_28sih"]
+[ext_resource type="Texture2D" uid="uid://b08v7vmwrdnik" path="res://Assets/sprites/camel/frame_07_delay-0.04s.png" id="4_2au51"]
+[ext_resource type="Texture2D" uid="uid://cugk4xmeux8md" path="res://Assets/sprites/camel/frame_09_delay-0.04s (1).png" id="5_eh2t2"]
+[ext_resource type="Texture2D" uid="uid://boxqf3m2viqga" path="res://Assets/sprites/camel/frame_10_delay-0.04s.png" id="6_bmi1s"]
+[ext_resource type="Texture2D" uid="uid://dxpcpqk3guolp" path="res://Assets/sprites/camel/frame_11_delay-0.04s.png" id="7_xcfj1"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3dgpt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_lnm5s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_28sih")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_2au51")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_eh2t2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_bmi1s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_xcfj1")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2keds"]
+size = Vector2(155.5, 154.5)
+
+[sub_resource type="GDScript" id="GDScript_jebqg"]
+
+[node name="players" type="RigidBody2D"]
+position = Vector2(-63, -21)
+script = ExtResource("1_lp47t")
+
+[node name="camel" type="AnimatedSprite2D" parent="."]
+position = Vector2(49, 1.00001)
+scale = Vector2(0.358125, 0.434583)
+sprite_frames = SubResource("SpriteFrames_3dgpt")
+animation = &"jump"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(53, 15.75)
+shape = SubResource("RectangleShape2D_2keds")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="CollisionShape2D"]
+script = SubResource("GDScript_jebqg")

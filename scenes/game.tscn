@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3 uid="uid://di7e0gvoblkt5"]
+
+[ext_resource type="PackedScene" uid="uid://bk221q1xjruoy" path="res://scenes/effectors/foreground.tscn" id="1_mde07"]
+[ext_resource type="PackedScene" uid="uid://bv2f8dp7ll62n" path="res://scenes/effectors/backgrounds/background.tscn" id="2_ojlwc"]
+[ext_resource type="PackedScene" uid="uid://bkvujjxq2pnhk" path="res://scenes/players/players.tscn" id="3_hvdql"]
+[ext_resource type="Texture2D" uid="uid://b2os3tpa7m8ho" path="res://Assets/sprites/Runner_4-removebg-preview.png" id="4_ja1wv"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_kxrxs"]
+bounce = 1.0
+
+[node name="Game" type="Node2D"]
+
+[node name="Foreground" parent="." instance=ExtResource("1_mde07")]
+position = Vector2(-2, 43)
+scale = Vector2(0.999146, 0.942935)
+
+[node name="background" parent="." instance=ExtResource("2_ojlwc")]
+position = Vector2(-9, 3)
+scale = Vector2(0.998921, 0.776316)
+
+[node name="players" parent="." instance=ExtResource("3_hvdql")]
+position = Vector2(197, 449)
+collision_layer = 255
+physics_material_override = SubResource("PhysicsMaterial_kxrxs")
+linear_velocity = Vector2(30, 0)
+
+[node name="Runner4-removebg-preview" type="Sprite2D" parent="."]
+position = Vector2(67, 468)
+scale = Vector2(0.373264, 0.333099)
+texture = ExtResource("4_ja1wv")

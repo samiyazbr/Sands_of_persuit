@@ -1,0 +1,49 @@
+[gd_scene load_steps=6 format=3 uid="uid://bk221q1xjruoy"]
+
+[ext_resource type="PackedScene" uid="uid://obxt2gd8kibq" path="res://Assets/background/scrollingbackground.tscn" id="1_mkjjc"]
+[ext_resource type="Texture2D" uid="uid://dpupilebj8m47" path="res://Assets/background/desert2.png" id="2_g8fub"]
+
+[sub_resource type="Shader" id="Shader_34wiu"]
+code = "shader_type canvas_item;
+
+uniform float scroll_speed;
+
+void fragment() {
+	// Called for every pixel the material is visible on.
+	vec2 u = UV;
+	u.x += scroll_speed*TIME;
+	vec4 col = texture(TEXTURE,u);
+	COLOR = col;
+}
+
+//void light() {
+	// Called for every pixel for every light affecting the CanvasItem.
+	// Uncomment to replace the default light processing function with this one.
+//}
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_njvte"]
+resource_local_to_scene = true
+shader = SubResource("Shader_34wiu")
+shader_parameter/scroll_speed = 0.2
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_immd0"]
+size = Vector2(1156, 103)
+
+[node name="Foreground" type="Node2D"]
+position = Vector2(-1, 0)
+
+[node name="scrollingbackground" parent="." instance=ExtResource("1_mkjjc")]
+material = SubResource("ShaderMaterial_njvte")
+offset_left = 0.0
+offset_top = 524.0
+offset_right = 546.0
+offset_bottom = 595.0
+scale = Vector2(2.1079, 1.66237)
+texture = ExtResource("2_g8fub")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(578, 580)
+shape = SubResource("RectangleShape2D_immd0")

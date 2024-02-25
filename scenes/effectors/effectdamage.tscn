@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://dmxmdp0pyyk4e"]
+
+[node name="effectdamage" type="Node2D"]
