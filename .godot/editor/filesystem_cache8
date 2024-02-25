@@ -1,0 +1,57 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1708859153
+barrel.gd::GDScript::-1::1708859134::0::1::::<>Node2D<>::
+bone.gd::GDScript::-1::1708859134::0::1::::<>Node2D<>::
+button_theme.tres::Theme::5486021008879197622::1708859134::0::1::::<><>::uid://dxfjcec7okuap::::res://Prinbles_Asset_UNDER (v 1.1) (9_7_2023)/png/Button/Rect/Hover.png<>uid://dvlcnjk0qn4ph::::res://Prinbles_Asset_UNDER (v 1.1) (9_7_2023)/png/Button/Square/Default.png
+icon.svg::CompressedTexture2D::5581110348775202961::1708859134::1708859153::1::::<><>::
+menu.gd::GDScript::-1::1708859134::0::1::::<>Control<>::
+menu.tscn::PackedScene::2004807776824299412::1708859134::0::1::::<><>::res://menu.gd<>uid://bcif07lo1kma2::::res://Assets/background/town-desert-nature-landscape-scene_1308-51267.png<>uid://ug66usslnh2l::::res://Assets/background/klipartz.com-removebg-preview.png<>uid://ckfp717wed2ja::::res://button_theme.tres
+players.gd::GDScript::-1::1708859134::0::1::::<>Node2D<>::
+README.md::TextFile::-1::1708859134::0::1::::<><>::
+Start game.gd::GDScript::-1::1708859134::0::1::::<>Control<>::
+start_game.tscn::PackedScene::447737251196682995::1708859134::0::1::::<><>::res://Start game.gd<>uid://bcif07lo1kma2::::res://Assets/background/town-desert-nature-landscape-scene_1308-51267.png<>uid://ckfp717wed2ja::::res://button_theme.tres<>uid://cqr07ghrwgrlb::::res://Assets/sprites/Jars 8.png<>uid://brtnlv6no78wf::::res://Assets/sprites/Jar 2.png<>uid://ug66usslnh2l::::res://Assets/background/klipartz.com-removebg-preview.png<>uid://b2os3tpa7m8ho::::res://Assets/sprites/Runner_4-removebg-preview.png
+::res://Assets/::1708859134
+::res://Assets/audio/::1708859134
+town-desert-nature-landscape-scene_1308-51267.png::CompressedTexture2D::5016685915401360307::1708859134::1708859154::1::::<><>::
+::res://Assets/background/::1708859134
+desert2.png::CompressedTexture2D::8254307885968564194::1708859134::1708859153::1::::<><>::
+desert.png::CompressedTexture2D::964672724453236506::1708859134::1708859153::1::::<><>::
+klipartz.com-removebg-preview.png::CompressedTexture2D::1418101804778358165::1708859134::1708859153::1::::<><>::
+scrollingbackground.tscn::PackedScene::986140037184422930::1708859134::0::1::::<><>::
+town-desert-nature-landscape-scene_1308-51267.png::CompressedTexture2D::2543663321224399547::1708859134::1708859153::1::::<><>::
+::res://Assets/sprites/::1708859134
+Jar 2.png::CompressedTexture2D::3619664318995660981::1708859134::1708859153::1::::<><>::
+Jar again.png::CompressedTexture2D::1316801123892857847::1708859134::1708859153::1::::<><>::
+Jars 5.png::CompressedTexture2D::3633595288863943096::1708859134::1708859153::1::::<><>::
+Jars 6.png::CompressedTexture2D::8722195486209067241::1708859134::1708859153::1::::<><>::
+Jars 8.png::CompressedTexture2D::5932532684393643947::1708859134::1708859153::1::::<><>::
+Runner_4-removebg-preview.png::CompressedTexture2D::4311564679734937504::1708859134::1708859153::1::::<><>::
+::res://Assets/sprites/camel/::1708859134
+frame_04_delay-0.04s (1).png::CompressedTexture2D::3236366868948762360::1708859134::1708859153::1::::<><>::
+frame_04_delay-0.04s.png::CompressedTexture2D::3505650071180431952::1708859134::1708859153::1::::<><>::
+frame_05_delay-0.04s.png::CompressedTexture2D::9096706108526780812::1708859134::1708859153::1::::<><>::
+frame_06_delay-0.04s.png::CompressedTexture2D::5866292020121784458::1708859134::1708859153::1::::<><>::
+frame_07_delay-0.04s.png::CompressedTexture2D::4210599565331371958::1708859134::1708859153::1::::<><>::
+frame_09_delay-0.04s (1).png::CompressedTexture2D::6189664691406232343::1708859134::1708859153::1::::<><>::
+frame_10_delay-0.04s.png::CompressedTexture2D::3417527074269326844::1708859134::1708859153::1::::<><>::
+frame_11_delay-0.04s.png::CompressedTexture2D::8804720199061710013::1708859134::1708859153::1::::<><>::
+::res://scenes/::1708859134
+game.tscn::PackedScene::7787120749351033780::1708859134::0::1::::<><>::uid://bk221q1xjruoy::::res://scenes/effectors/foreground.tscn<>uid://bv2f8dp7ll62n::::res://scenes/effectors/backgrounds/background.tscn<>uid://bkvujjxq2pnhk::::res://scenes/players/players.tscn<>uid://b2os3tpa7m8ho::::res://Assets/sprites/Runner_4-removebg-preview.png
+::res://scenes/effectors/::1708859134
+effectdamage.tscn::PackedScene::8049743651558900710::1708859134::0::1::::<><>::
+foreground.tscn::PackedScene::3145733990475511356::1708859134::0::1::::<><>::uid://obxt2gd8kibq::::res://Assets/background/scrollingbackground.tscn<>uid://dpupilebj8m47::::res://Assets/background/desert2.png
+pickup.tscn::PackedScene::847980599835354513::1708859134::0::1::::<><>::
+::res://scenes/effectors/backgrounds/::1708859134
+background.tscn::PackedScene::3916487297825308007::1708859134::0::1::::<><>::uid://obxt2gd8kibq::::res://Assets/background/scrollingbackground.tscn<>uid://bcif07lo1kma2::::res://Assets/background/town-desert-nature-landscape-scene_1308-51267.png
+::res://scenes/items/::1708859134
+bone.tscn::PackedScene::5158226716659494719::1708859134::0::1::::<><>::res://bone.gd
+::res://scenes/Obstacles/::1708859134
+barrel.tscn::PackedScene::4665567888379169314::1708859134::0::1::::<><>::res://barrel.gd
+::res://scenes/players/::1708859134
+players.gd::GDScript::-1::1708859134::0::1::::<>Node2D<>::
+players.tscn::PackedScene::3132891973913459092::1708859134::0::1::::<><>::res://players.gd<>uid://bmdyqv4an4xbc::::res://Assets/sprites/camel/frame_04_delay-0.04s (1).png<>uid://cptw8cg7vsfl7::::res://Assets/sprites/camel/frame_06_delay-0.04s.png<>uid://b08v7vmwrdnik::::res://Assets/sprites/camel/frame_07_delay-0.04s.png<>uid://cugk4xmeux8md::::res://Assets/sprites/camel/frame_09_delay-0.04s (1).png<>uid://boxqf3m2viqga::::res://Assets/sprites/camel/frame_10_delay-0.04s.png<>uid://dxpcpqk3guolp::::res://Assets/sprites/camel/frame_11_delay-0.04s.png
+::res://scenes/UI/::1708859134
+gameoverui.tscn::PackedScene::4977702520137369578::1708859134::0::1::::<><>::
+score_ui.tscn::PackedScene::5900140093736869409::1708859134::0::1::::<><>::
+::res://scripts/::1708859134
+klipartz.com.png::CompressedTexture2D::7632046697188148086::1708859134::1708859154::1::::<><>::
