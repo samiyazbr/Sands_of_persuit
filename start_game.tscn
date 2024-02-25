@@ -1,0 +1,56 @@
+[gd_scene load_steps=9 format=3 uid="uid://gm5fxgf0ubmh"]
+
+[ext_resource type="Script" path="res://Start game.gd" id="1_8oqwy"]
+[ext_resource type="Texture2D" uid="uid://bcif07lo1kma2" path="res://Assets/background/town-desert-nature-landscape-scene_1308-51267.png" id="2_rsidr"]
+[ext_resource type="Theme" uid="uid://ckfp717wed2ja" path="res://button_theme.tres" id="3_txued"]
+[ext_resource type="Texture2D" uid="uid://cqr07ghrwgrlb" path="res://Assets/sprites/Jars 8.png" id="4_6f82r"]
+[ext_resource type="Texture2D" uid="uid://brtnlv6no78wf" path="res://Assets/sprites/Jar 2.png" id="5_dud7b"]
+[ext_resource type="Texture2D" uid="uid://ug66usslnh2l" path="res://Assets/background/klipartz.com-removebg-preview.png" id="6_vjcl7"]
+[ext_resource type="Texture2D" uid="uid://b2os3tpa7m8ho" path="res://Assets/sprites/Runner_4-removebg-preview.png" id="7_6xumf"]
+
+[sub_resource type="FontVariation" id="FontVariation_xfrgk"]
+
+[node name="Start game" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -2.0
+offset_top = 2.0
+offset_right = 1154.0
+offset_bottom = 658.0
+script = ExtResource("1_8oqwy")
+
+[node name="Town-desert-nature-landscape-scene1308-51267" type="Sprite2D" parent="."]
+position = Vector2(577, 329)
+scale = Vector2(1.55946, 1.29764)
+texture = ExtResource("2_rsidr")
+
+[node name="Load game" type="Button" parent="."]
+layout_mode = 0
+offset_left = 421.0
+offset_top = 469.0
+offset_right = 682.0
+offset_bottom = 555.0
+theme = ExtResource("3_txued")
+theme_override_fonts/font = SubResource("FontVariation_xfrgk")
+theme_override_font_sizes/font_size = 24
+text = "Load Game"
+
+[node name="Jars8" type="Sprite2D" parent="."]
+position = Vector2(1057, 525)
+texture = ExtResource("4_6f82r")
+
+[node name="Jar2" type="Sprite2D" parent="."]
+position = Vector2(1092, 564)
+texture = ExtResource("5_dud7b")
+
+[node name="Klipartz_com-removebg-preview" type="Sprite2D" parent="."]
+position = Vector2(962, 218)
+scale = Vector2(0.183114, 0.165905)
+texture = ExtResource("6_vjcl7")
+
+[node name="Runner4-removebg-preview2" type="Sprite2D" parent="."]
+position = Vector2(205, 213)
+scale = Vector2(0.117188, 0.122887)
+texture = ExtResource("7_6xumf")
+
+[connection signal="pressed" from="Load game" to="." method="_on_load_game_pressed"]
